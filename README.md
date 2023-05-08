@@ -1,6 +1,7 @@
 ## LAVI's Message Queue Side Project
 
 ## Info
+> 使用 RabbitMQ 來實作 Message Queue 
 - 先至官方文件中下載 Windows 版本的 `rabbitmq-server-3.11.15`
 - 在 windows 環境下安裝 RabbitMQ 需先安裝 Erlang 套件，目前的版本是 `Erlang OTP 25.3.2`
 - 執行 `rabbitmq-plugins.bat enable rabbitmq_management`  (RabbitMQ 指令，用於啟用 RabbitMQ 管理插件) 
@@ -10,9 +11,9 @@
 
 ### 學習到的知識
 - 整個實作 Message queue 的過程中有三個角色：
-1.	將 message 發送到 Queue 者，為 Producer (本次實作時，利用 send.py 將 message 發送至 queue)
-2.	負責暫存 message，為 Queue (本次實作利用了 RabbitMQ 提供的服務)
-3.	從 Queue 中接收訊息者，為 Consumer (本次實作時，利用 receive.py 接收 queue 中的 message)
+  1. 將 message 發送到 Queue 者，為 Producer (本次實作時，利用 send.py 將 message 發送至 queue)
+  2. 負責暫存 message，為 Queue (本次實作利用了 RabbitMQ 提供的服務)
+  3. 從 Queue 中接收訊息者，為 Consumer (本次實作時，利用 receive.py 接收 queue 中的 message)
 - 而本次實作利用 RabbitMQ 中的 Direct 模式進行，Direct 模式只會有一個 Producer 發送 message，也只會有一個 Consumer 接收 message，類似於單點至單點傳送訊息的關係
 
 ## Reference
