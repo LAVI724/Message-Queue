@@ -1,11 +1,13 @@
 ## LAVI's Message Queue Side Project
-使用 [RabbitMQ](https://www.rabbitmq.com/) 來實作 Message Queue 
 
-## Environment
+## Information
+- 使用 [RabbitMQ](https://www.rabbitmq.com/) 來實作 Message Queue 
+
+### Environment
 1. 先至[官方文件](https://www.rabbitmq.com/install-windows.html)中下載 Windows 版本的 `rabbitmq-server-3.11.15`
 2. 在 windows 環境下安裝 RabbitMQ 需先安裝 [Erlang 套件](https://www.erlang.org/downloads)，目前的版本是 `Erlang OTP 25.3.2`
 
-## Information
+### Details
 1. 執行 `rabbitmq-plugins.bat enable rabbitmq_management`  (RabbitMQ 指令，用於啟用 RabbitMQ 管理插件) 
 2. 訪問 RabbitMQ 的 Web 管理介面 `http://localhost:15672`，預設帳密為 `guest:guest`，登入後會進入 Overview 頁面，可查看 queue 中的 message 數量及 rate
 3. 利用 [Github rabbitmq/rabbitmq-tutorials](https://github.com/rabbitmq/rabbitmq-tutorials/tree/main/python) 中提供的 Hello World 示範 `send.py` 進行測試
