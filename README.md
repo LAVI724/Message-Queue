@@ -1,5 +1,5 @@
 ## LAVI's Message Queue Side Project
-###### tags: `Side Project` `LAVI` `2023` 
+###### tags: `Side Project` `RabbitMQ` `LAVI` `2023` 
 使用 [RabbitMQ](https://www.rabbitmq.com/) 來實作 Message Queue 
 
 ## Information
