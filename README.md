@@ -1,6 +1,6 @@
 ## LAVI's Message Queue Side Project
 ###### tags: `Side Project` `RabbitMQ` `LAVI` `2023` 
-使用 [RabbitMQ](https://www.rabbitmq.com/) 來實作 Message Queue 
+使用 [RabbitMQ](https://www.rabbitmq.com/) 來實作並觀察 Message Queue 
 
 ## Information
 ### Environment
